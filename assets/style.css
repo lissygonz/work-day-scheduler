@@ -1,9 +1,11 @@
+/* applies to entire body of project*/
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
   }
   
+  /*applies to the text written in the time slots*/
   textarea{
     background: transparent;
     border: none;
@@ -13,6 +15,7 @@ body {
     padding: 10px;
   }
   
+  /*applies to header*/
   .jumbotron {
     text-align: center;
     background-color: transparent;
@@ -25,6 +28,7 @@ body {
     white-space: pre-wrap;
   }
   
+  /*next two applies to the blocks of time from 8-5*/
   .time-block{
     text-align: center;
     border-radius: 15px;
@@ -36,6 +40,7 @@ body {
     border-top: 1px solid white;;
   }
   
+  /*next 4 applies to the blocks of time depending the state its in*/
   .hour {
     background-color: #ffffff;
     color: #000000;
@@ -56,7 +61,7 @@ body {
     background-color: #77dd77;
     color: white;
   }
-  
+  /* next 3 applies to the button*/
   .saveBtn {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
@@ -69,3 +74,24 @@ body {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
+
+  .saveBtn {
+    border: 0;
+    border-radius: 0.25rem;
+    height: 50px;
+  }
+
+  /* media query for smaller screens to adjust for tablets*/
+  @media screen and (max-width: 768px), screen and (max-width: 575px) {
+    .row {
+      height: auto;
+      margin-top: 20px;
+    }
+
+    
+    textarea {
+        min-height: 85px;
+        border: 0;
+      }
+
+    }
