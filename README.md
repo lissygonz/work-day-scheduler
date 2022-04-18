@@ -16,6 +16,7 @@ A scheduler that provides a visual of what the work day looks and gives cue to p
 
 ## Links
 https://github.com/lissygonz/work-day-scheduler
+https://lissygonz.github.io/work-day-scheduler/
 
 ## Contributor 
 Lisette Gonzalez
