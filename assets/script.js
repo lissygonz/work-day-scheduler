@@ -15,8 +15,8 @@ $(document).ready(function () {
         //get how much time is left
         var timeNow = moment().hour();
 
- // loop over time blocks
-/* $(".time-block").each(function () {
+ 
+$(".time-block").each(function () {
     var blockTime = parseInt($(this).attr("id").split("hour")[1]);
      // checks the time and starts to change the color indicators depending on the current state(present,past,future)
      if (blockTime < timeNow) {
@@ -38,5 +38,6 @@ $(document).ready(function () {
 })
 }
 
-
+// Save text in local storage
+localStorage.setItem(time, text);
         
